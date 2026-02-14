@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4A70A9;
+    height: 5rem;
+}
+
+header h1 {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 5000px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#notComplated, #addbook, #searchbar, #isCompleted {
+    background-color: white;
+    width: 95%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 3px -1px black;
+}
+
+/* #addbook{
+    background-color: #443deb;
+} */
+
+.book {
+    padding: 10px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 3px -1px black;
+    margin: 5px 0px 5px 0px;
+}
+
+.button {
+    display: flex;
+    gap: 5px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+button{
+    padding: 6px 20px;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid;
+}
+
+.toggle-button{
+    border-color: #1a9b41;
+    color: #1a9b41;
+}
+
+.toggle-button:hover{
+    background-color: #D1F2D1;
+}
+
+.delete-button{
+    border-color: #B3261E;
+    color: #B3261E;
+}
+
+.delete-button:hover{
+    background-color: #FDE2E1;
+}
+
+.edit-button{
+    border-color: #0d6efd;
+    color: #0d6efd;
+}
+
+.edit-button:hover{
+    background-color: #d5dcff;
+}
+
+input {
+    padding: 10px;
+}
+
+.compalated-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+button{
+    margin-top: 5px;
+}
