@@ -190,10 +190,10 @@ function loadDataFromStorage() {
 }
 
 document.addEventListener(renderEvent, () => {
-  const uncompletedBook = document.getElementById('incompleteBookList');
+  const uncompletedBook = document.getElementById('incomplete-book-list');
   uncompletedBook.innerHTML = '';
   
-  const completedBook = document.getElementById('completeBookList');
+  const completedBook = document.getElementById('complete-book-list');
   completedBook.innerHTML = '';
 
   for (const bookItem of books) {

@@ -37,12 +37,31 @@ main {
     background-color: white;
 }
 
-#notComplated, #addbook, #searchbar, #isCompleted {
+#notComplated, #isCompleted,  #search-bar{
     background-color: white;
     width: 95%;
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 8px;
     box-shadow: 0px 0px 3px -1px black;
+}
+
+#addbook{
+    background-color: #e7ebff;
+    width: 95%;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px -1px black;
+}
+
+#search-book input{
+    width: 100%;
+}
+
+#search-book{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px;
 }
 
 /* #addbook{
@@ -50,15 +69,19 @@ main {
 } */
 
 .book {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
     padding: 10px;
-    border-radius: 0.5rem;
+    border-radius: 3px;
     box-shadow: 0px 0px 3px -1px black;
-    margin: 5px 0px 5px 0px;
 }
 
 .button {
     display: flex;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
 .input {
@@ -66,18 +89,37 @@ main {
     flex-direction: column;
 }
 
-input{
-    height: 2rem;
-    border-radius: 5px;
-    border: 1px solid;
+input[type="text"], input[type="number"]{
+    cursor: text;
+
+    height: 36px;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 10px;
+    border: 0.2px solid gray;
+    /* box-shadow: 0px 0px 3px -1px black; */
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
 }
 
 button{
-    padding: 6px 20px;
-    height: 2rem;
-    border-radius: 5px;
+    cursor: pointer;
+
+    padding: 4px 24px;
+    height: 35px;
+    border-radius: 3px;
     background-color: white;
     border: 1px solid;
+
+    margin-top: 5px;
+}
+
+#complete-book-list, #incomplete-book-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .toggle-button{
@@ -90,37 +132,42 @@ button{
 }
 
 .delete-button{
-    border-color: #B3261E;
-    color: #B3261E;
+    border-color: #df2e25;
+    color: #df2e25;
 }
 
 .delete-button:hover{
     background-color: #FDE2E1;
 }
 
-.edit-button{
+.edit-button, #book-form-submit{
     border-color: #0d6efd;
+    background-color: transparent;
     color: #0d6efd;
 }
 
-.edit-button:hover{
-    background-color: #d5dcff;
+#search-button{
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
 }
 
-input {
-    padding: 10px;
+#book-form-submit{
+    background-color: white;
+}
+
+.edit-button:hover, #book-form-submit:hover{
+    background-color: #e7ebff;
 }
 
 .compalated-checkbox {
     display: flex;
     align-items: center;
     gap: 3px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 h2 {
     margin-bottom: 5px;
-}
-
-button{
-    margin-top: 5px;
 }

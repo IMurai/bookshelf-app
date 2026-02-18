@@ -12,8 +12,8 @@
       rel="stylesheet"
     />
 
-    <!-- Impor script kamu di sini -->
-    <!-- Lampirkan `defer` jika pemanggilan dilakukan dalam <head> -->
+    <link rel="icon" type="image/png" href="Style/icon.png">
+
     <script defer src="./js/main.js"></script>
     <link rel="stylesheet" href="./Style/style.css" />
   </head>
@@ -33,7 +33,7 @@
               type="text"
               required
               data-testid="bookFormTitleInput"
-              placeholder="Masukkan Judul..."
+              placeholder="Masukkan Judul"
               />
             </div>
             <div class="input">
@@ -43,7 +43,7 @@
               type="text"
               required
               data-testid="bookFormAuthorInput"
-              placeholder="Masukkan Nama Penulis..."
+              placeholder="Masukkan Nama Penulis"
               />
             </div>
             <div class="input">
@@ -53,7 +53,7 @@
               type="number"
               required
               data-testid="bookFormYearInput"
-              placeholder="Masukkan Tahun Terbit..."
+              placeholder="Masukkan Tahun Terbit"
             />
           </div>
           <div class="compalated-checkbox">
@@ -65,7 +65,7 @@
             />
           </div>
           <button
-            id="bookFormSubmit"
+            id="book-form-submit"
             type="submit"
             data-testid="bookFormSubmitButton"
           >
@@ -74,17 +74,17 @@
         </form>
       </section>
 
-      <section id="searchbar">
+      <section id="search-bar">
         <h2>Cari Buku</h2>
-        <form id="searchBook" data-testid="searchBookForm">
+        <form id="search-book" data-testid="searchBookForm">
           <input
             id="searchBookTitle"
             type="text"
             data-testid="searchBookFormTitleInput"
-            placeholder="Masukkan Judul..."
+            placeholder="Masukkan Judul"
           />
           <button
-            id="searchSubmit"
+            id="search-button"
             type="submit"
             data-testid="searchBookFormSubmitButton"
           >
@@ -96,7 +96,7 @@
       <section id="notComplated">
         <h2>Belum selesai dibaca</h2>
 
-        <div id="incompleteBookList" data-testid="incompleteBookList">
+        <div id="incomplete-book-list" data-testid="incompleteBookList">
           <!-- 
             Ini adalah struktur HTML untuk masing-masing buku.
             Pastikan susunan elemen beserta atribut data-testid menyesuaikan seperti contoh ini.
@@ -119,7 +119,7 @@
       <section id="isCompleted">
         <h2>Selesai dibaca</h2>
 
-        <div id="completeBookList" data-testid="completeBookList">
+        <div id="complete-book-list" data-testid="completeBookList">
           <!-- 
             Ini adalah struktur HTML untuk masing-masing buku.
             Pastikan susunan elemen beserta atribut data-testid menyesuaikan seperti contoh ini.
